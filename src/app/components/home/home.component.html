@@ -1,0 +1,34 @@
+<header class="grid grid-cols-1 md:grid-cols-2 px-20 py-16 bg-white items-center">
+    <h1 class="font-playfair text-8xl font-black leading-none tracking-tight">VIEWS Investments</h1>
+    <p class="text-xl text-gray-600 font-inter leading-relaxed">We offer modern real estate solutions that inspire and empower.</p>
+</header>
+
+<section class="bg-black text-white py-16 text-center relative">
+    <h2 class="handwritten mb-8">We Think Human</h2>
+    <video class="w-full h-screen object-cover" #videoPlayer autoplay muted loop>
+      <source src="assets/paragonpar.mp4" type="video/mp4">
+    </video>
+    <button class="absolute top-4 left-4 bg-gray-800 text-white px-4 py-2 rounded" (click)="toggleMute()">{{ isMuted ? 'Unmute' : 'Mute' }}</button>
+</section>
+
+<section class="marquee">
+  <span>Better workspace communities • Innovative real estate solutions • Tailored opportunities</span>
+</section>
+
+<nav class="fixed right-0 top-1/3 flex flex-col space-y-4 bg-white shadow-lg p-4">
+    <a href="#" class="py-3 px-6 bg-orange-500 text-white font-semibold rounded-l-full hover:bg-orange-600 transition">People</a>
+    <a href="#" class="py-3 px-6 bg-orange-500 text-white font-semibold rounded-l-full hover:bg-orange-600 transition">Talks</a>
+    <a href="#" class="py-3 px-6 bg-orange-500 text-white font-semibold rounded-l-full hover:bg-orange-600 transition">Portfolio</a>
+</nav>
+
+<script>
+  export class AppComponent {
+    isMuted = true;
+
+    toggleMute() {
+      const video = document.querySelector('video');
+      this.isMuted = !this.isMuted;
+      video.muted = this.isMuted;
+    }
+  }
+</script>
