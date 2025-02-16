@@ -1,0 +1,6 @@
+.portfolio { background-color: #f3f4f6; padding: 4rem 2rem; }
+.filters button { margin: 0 0.5rem; }
+.masonry-grid { display: grid; gap: 1rem; }
+.portfolio-item { border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease-in-out; }
+.portfolio-item:hover { transform: scale(1.05); }
+h2 { font-family: 'Playfair Display', serif; font-size: 3.75rem; font-weight: 900; margin-bottom: 2rem; }

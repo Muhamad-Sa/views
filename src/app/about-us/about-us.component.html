@@ -1,0 +1,47 @@
+<section class="about-us-section">
+
+  <!-- Upper Static Background Image Section -->
+  <div class="upper-section"></div>
+
+  <!-- Lower Section (Background Changes) -->
+  <div class="lower-section transition-colors duration-500" 
+    [ngStyle]="{ 'background-color': cards[selectedCard].bgColor }">
+    
+    <!-- Centered Card Container -->
+    <div class="card-container">
+
+      <!-- Static Background Card -->
+      <div class="static-card"></div>
+
+      <!-- Rotating Cards (On Top) -->
+      <div *ngFor="let card of cards; let i = index" 
+          class="absolute w-2/3 h-2/3 p-8 rounded-2xl shadow-2xl transition-transform duration-700 ease-in-out" 
+          [ngClass]="{ 
+            'top-card': selectedCard === i, 
+            'hidden-card': selectedCard !== i && leavingCard !== i, 
+            'leaving-card': leavingCard === i
+          }" 
+          (click)="showNextCard()">
+
+        <div class="about-card bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center">
+          
+          <div class="about-card-content">
+            <p class="text-lg text-gray-700 mb-6">{{ card.content }}</p>
+            <img [src]="card.image" alt="{{ card.title }}" />
+            <h1 class="text-2xl font-bold text-gray-800 mt-6">{{ card.title }}</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- "About Us" Text in Bottom Right -->
+    <div class="about-text">
+        About <br> US
+    </div>
+
+  </div>
+
+</section>
