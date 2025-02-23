@@ -39,6 +39,11 @@ h1 span {
     font-size: 6rem;
 }
 
+.logo1 {
+    position: relative;
+    top: 75px;
+}
+
 /* ✅ Button Styling */
 button {
     font-size: 1.2rem;
@@ -55,7 +60,8 @@ button {
     color: #235b4e; /* Dark green */
     border: 2px solid #235b4e; /* Dark green border */
     margin-right: 50px;
-    margin-left: 40px;
+    margin-left: 30px;
+    margin-top: 100px;
 }
 
 .button-developers:hover {

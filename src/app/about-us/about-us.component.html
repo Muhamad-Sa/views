@@ -1,47 +1,56 @@
-<section class="about-us-section">
+<section class="about-us">
+    <!-- ✅ Logo and Title -->
+    <div class="header-section">
+        <img src="assets/views logos rgb-02.png" alt="Views Investments Logo" class="logo">
+        <h1 class="about-title">About <br> Us</h1>
+    </div>
 
-  <!-- Upper Static Background Image Section -->
-  <div class="upper-section"></div>
+    <!-- ✅ Who We Are Section -->
+    <div class="who-we-are">
+        <h2>Who We Are</h2>
+        <p>
+            At Views Investments, we pride ourselves on being a
+            leading real estate brokerage with over seven years of
+            extensive experience across Egypt.
+            <br><br>
+            Our deep expertise and comprehensive market knowledge have established us
+            as a trusted name in the industry. Our commitment is to be the most reliable and
+            preferred choice for our clients, offering unparalleled service and insight in the
+            dynamic real estate market.
+        </p>
+    </div>
 
-  <!-- Lower Section (Background Changes) -->
-  <div class="lower-section transition-colors duration-500" 
-    [ngStyle]="{ 'background-color': cards[selectedCard].bgColor }">
-    
-    <!-- Centered Card Container -->
-    <div class="card-container">
-
-      <!-- Static Background Card -->
-      <div class="static-card"></div>
-
-      <!-- Rotating Cards (On Top) -->
-      <div *ngFor="let card of cards; let i = index" 
-          class="absolute w-2/3 h-2/3 p-8 rounded-2xl shadow-2xl transition-transform duration-700 ease-in-out" 
-          [ngClass]="{ 
-            'top-card': selectedCard === i, 
-            'hidden-card': selectedCard !== i && leavingCard !== i, 
-            'leaving-card': leavingCard === i
-          }" 
-          (click)="showNextCard()">
-
-        <div class="about-card bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center">
-          
-          <div class="about-card-content">
-            <p class="text-lg text-gray-700 mb-6">{{ card.content }}</p>
-            <img [src]="card.image" alt="{{ card.title }}" />
-            <h1 class="text-2xl font-bold text-gray-800 mt-6">{{ card.title }}</h1>
-          </div>
-
+    <div class="mission-vision">
+        <div class="box">
+            <img src="assets/Vector Smart Object copy 4.png" alt="Views Investments Logo" class="logo2">
+            <img src="assets/Our Vision.png" alt="Views Investments Logo" class="logo3">
+            <p> Our vision is to be the foremost real estate brokerage firm in Egypt and the Gulf region, recognized for our integrity, expertise, 
+                and exceptional client service.
+                <br><br>
+                We aspire to lead the industry by setting the highest standards
+                in real estate brokerage, consultation, and investment, and to
+                become the most favored choice for clients seeking reliable and
+                innovative solutions in the market.
+            </p>
         </div>
 
-      </div>
-
+        <div class="box">
+            <img src="assets/Vector Smart Object copy 4.png" alt="Views Investments Logo" class="logo2">
+            <img src="assets/Our Misson .png" alt="Views Investments Logo" class="logo3">
+            <p>At Views Investments, our mission is to provide exceptional real estate brokerage services across Egypt, focusing on the sale
+                and resale of prestigious residential and commercial properties.
+                <br><br>
+                We are dedicated to leveraging our extensive market
+                expertise and deep industry knowledge to offer unparalleled
+                service, ensuring our clients receive the highest level of trust 
+                and satisfaction. As we continue to grow, we are committed 
+                to expanding our reach into the Gulf region, bringing our
+                proven track record of excellence to new and exciting
+                markets.
+                <br><br>
+                Our aim is to be the top choice for clients seeking brokerage,
+                consultation, and investment services.
+            </p>
+        </div>
     </div>
-
-    <!-- "About Us" Text in Bottom Right -->
-    <div class="about-text">
-        About <br> US
-    </div>
-
-  </div>
-
 </section>

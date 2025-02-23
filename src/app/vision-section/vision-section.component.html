@@ -1,0 +1,47 @@
+<section class="vision-section">
+    <!-- Background -->
+    <div class="vision-bg"></div>
+  
+    <!-- Vision Container -->
+    <div class="vision-container">
+  
+      <!-- Title -->
+      <p class="vision-title">OUR <br> <span>VISION</span></p>
+  
+      <!-- Vision Box with Animations -->
+      <div 
+        class="vision-box"
+        [@hoverEffect]="isHovered ? 'hovered' : 'normal'"
+        [@flipEffect]="isFlipped ? 'back' : 'front'"
+        (mouseenter)="toggleHover(true)"
+        (mouseleave)="toggleHover(false)"
+        (click)="toggleFlip()"
+      >
+        <div class="vision-content front" *ngIf="!isFlipped">
+          <p class="vision-header">
+            Our vision is to be the foremost real estate brokerage firm in Egypt and the Gulf region, 
+            <strong>recognized for our integrity, expertise, and exceptional client service.</strong>
+          </p>
+          <p class="vision-text">
+            We aspire to lead the industry by setting the highest standards in real estate brokerage, 
+            consultation, and investment, and to become the most favored choice for clients seeking 
+            reliable and innovative solutions in the market.
+          </p>
+        </div>
+  
+        <!-- Flipped Content -->
+        <div class="vision-content back" *ngIf="isFlipped">
+          <p class="vision-header">Innovation & Excellence</p>
+          <p class="vision-text">
+            We believe in pushing the boundaries of real estate with unique, customized solutions 
+            that cater to the evolving needs of our clients.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Page Number -->
+      <div class="page-number">05</div>
+  
+    </div>
+  </section>
+  
