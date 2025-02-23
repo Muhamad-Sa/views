@@ -1,0 +1,98 @@
+/* ✅ Section Wrapper */
+.vision-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ed0606; /* Red background */
+    overflow: hidden;
+}
+
+/* ✅ Background */
+.vision-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ed0606;
+    z-index: -1;
+}
+
+/* ✅ Vision Content */
+.vision-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+/* ✅ Title */
+.vision-title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #47e0ff; /* Light blue */
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-family: 'Mandau', sans-serif;
+}
+
+.vision-title span {
+    display: block;
+    font-size: 6rem;
+}
+
+/* ✅ Vision Box */
+.vision-box {
+    width: 60%;
+    padding: 40px;
+    background-color: #235b4e;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+/* ✅ Vision Content */
+.vision-content {
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ✅ Front & Back Styling */
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0073e5; /* Blue */
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* ✅ Page Number */
+.page-number {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    font-size: 2rem;
+    color: #47e0ff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

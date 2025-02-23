@@ -2,3 +2,41 @@
 @import '@fontsource/playfair-display';
 @import '@fontsource/inter';
 
+@font-face {
+    font-family: 'Mandau';
+    src: url('src/assets/fonts/Mandau-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mandau';
+    src: url('src/assets/fonts/Mandau-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mandau';
+    src: url('src/assets/fonts/Mandau-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mandau';
+    src: url('src/assets/fonts/Mandau-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mandau';
+    src: url('src/assets/fonts/Mandau-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Mandau', sans-serif;
+}

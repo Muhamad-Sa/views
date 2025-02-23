@@ -17,6 +17,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VisionSectionComponent } from './vision-section/vision-section.component';
+
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutUsComponent,
     PortfolioComponent,
     ContactUsComponent,
+    FooterComponent,
+    VisionSectionComponent,
     FooterComponent
   ],
   imports: [
